@@ -37,7 +37,7 @@ enum L9110moter {
 //% color="#74ad1d" block="ユーレカIO"
 namespace eureka_blocks {
   //% shim=DS18B20::Temperature
-  //% group="DS18B20"
+  //% group="4_センサの値"
   export function Temperature(p: number): number {
     // Fake function for simulator
     return 0;
