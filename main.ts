@@ -347,14 +347,14 @@ namespace eureka_blocks {
   export function ping() {
     // send
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
-    pins.digitalWritePin(DigitalPin.P16, 0);
+    pins.digitalWritePin(DigitalPin.P8, 0);
     control.waitMicros(2);
-    pins.digitalWritePin(DigitalPin.P16, 1);
+    pins.digitalWritePin(DigitalPin.P8, 1);
     control.waitMicros(10);
-    pins.digitalWritePin(DigitalPin.P16, 0);
+    pins.digitalWritePin(DigitalPin.P8, 0);
 
     // read
-    const d = pins.pulseIn(DigitalPin.P8, PulseValue.High, 500 * 58);
+    const d = pins.pulseIn(DigitalPin.P16, PulseValue.High, 500 * 58);
 
     return Math.idiv(d, 58);
   }
