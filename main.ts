@@ -66,7 +66,7 @@ namespace eureka_blocks {
   //% weight=10 blockId="Temperature_number"
   //% block="温度センサDS |%p|"
   //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
-  //% group="DS18B20"
+  //% group="4_センサの値"
   export function TemperatureNumber(p: eureka_IO): number {
     let temp = Temperature(p);
     let x = Math.round(temp / 100);
