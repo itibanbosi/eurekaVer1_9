@@ -343,7 +343,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% weight=6 blockId=sonar_ping block="超音波できょりをはかる" group="4_センサの値"
+  //% weight=6 blockId=sonar_ping block="超音波距離ｾﾝｻ" group="4_センサの値"
   export function ping() {
     // send
     pins.setPull(DigitalPin.P16, PinPullMode.PullNone);
