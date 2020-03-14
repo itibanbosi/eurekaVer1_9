@@ -133,7 +133,7 @@ namespace eureka_blocks {
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
   }
-  //% color="#006B8F"  weight=27 block="光センサが |%limit| より暗かった |%tlp|" group="2_電気の利用ユニット"
+  //% color="#006B8F"  weight=27 block="光ｾﾝｻ値が |%limit| より暗かった |%tlp|" group="2_電気の利用ユニット"
   //% limit.min=0 limit.max=100
   export function decideLight(limit: number, tlp: eureka_tlp): boolean {
     switch (tlp) {
