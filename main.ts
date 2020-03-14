@@ -153,7 +153,7 @@ namespace eureka_blocks {
         break;
     }
   }
-  //% color="#006B8F"  weight=26 blockId=eureka_denkitemp block="電気_光センサ値 |%pin|" group="2_電気の利用ユニット"
+  //% color="#006B8F"  weight=26 blockId=eureka_denkitemp block="光センサ値 |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkitemp(pin: eureka_denki): number {
     switch (pin) {
       case eureka_denki.Aﾎﾟｰﾄ:
@@ -184,7 +184,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#009A00"  weight=24 blockId=eureka_denkihuman block="電気_人感センサ値 |%pin|" group="2_電気の利用ユニット"
+  //% color="#009A00"  weight=24 blockId=eureka_denkihuman block="人感センサ値 |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkihuman(pin: eureka_denki): number {
     switch (pin) {
       case eureka_denki.Aﾎﾟｰﾄ:
