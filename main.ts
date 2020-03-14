@@ -375,12 +375,11 @@ namespace eureka_blocks {
 //% color="#f5a142" block="ユーレカ車" icon="\uf1b9"
 namespace eureka_blocks_car {
   //% blockId=servos_forward
-  //% block="前に進む　０～１００　左出力％　 |%le| 右出力％　 |%ri|" group="基本のうごき"
-  //% le.min=0 le.max=100
-  //% ri.min=0 ri.max=100
-  export function forward(le: number, ri: number): void {
-    pins.servoWritePin(AnalogPin.P13, 180);
-    pins.servoWritePin(AnalogPin.P14, 0);
+  //% block="前に進む　出力調整　左へ |%le| 右へ" group="基本のうごき"
+  //% le.min=-30 le.max=30
+  export function forward(le: number): void {
+    pins.servoWritePin(AnalogPin.P14, 30 + le);
+    pins.servoWritePin(AnalogPin.P13, 150 + le);
   }
 
   //% blockId=servos_backward
