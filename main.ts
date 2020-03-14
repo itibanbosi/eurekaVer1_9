@@ -1,8 +1,3 @@
-/*
-eureka Ver1_9
-*/
-
-
 enum eureka_IO {
   Aﾎﾟｰﾄ,
   Bﾎﾟｰﾄ,
@@ -78,8 +73,8 @@ namespace eureka_blocks {
     return x;
   }
 
-  //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号機 点灯|%mode||%pin|" group="1_信号機"
-  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=30
+  //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号機 点灯|%mode| |%pin|" group="1_信号機"
+  //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
   export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
       case eureka_tlp.Aﾎﾟｰﾄ:
@@ -96,7 +91,7 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="黄信号機 点灯|%mode||%pin|" group="1_信号機"
+  //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="黄信号機 点灯|%mode| |%pin|" group="1_信号機"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_yellow(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
@@ -114,7 +109,7 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤信号機 点灯|%mode||%pin|" group="1_信号機"
+  //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤信号機 点灯|%mode| |%pin|" group="1_信号機"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_red(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
@@ -201,7 +196,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#f5a142"  weight=23 blockId=eureka_denkiwhite block="電気_LED |%mode||%pin|" group="2_電気の利用ユニット"
+  //% color="#f5a142"  weight=23 blockId=eureka_denkiwhite block="電気_LED |%mode| |%pin|" group="2_電気の利用ユニット"
   export function eureka_denkiwhite(port: eureka_denki, mode: onoff) {
     switch (port) {
       case eureka_denki.Aﾎﾟｰﾄ:
