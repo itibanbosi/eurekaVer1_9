@@ -299,7 +299,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#c3c900"  weight=9 blockId=eureka_light block="単体_光ｾﾝｻ |%pin|" group="4_センサの値"
+  //% color="#c3c900"  weight=8 blockId=eureka_light block="単体_光ｾﾝｻ |%pin|" group="4_センサの値"
   export function eureka_light(pin: eureka_IO): number {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
