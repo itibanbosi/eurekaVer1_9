@@ -34,7 +34,7 @@ enum L9110moter {
   seisi
 }
 
-//% color="#ff7b00" block="4_センサの値"
+//% color="#74ad1d" block="ユーレカIO"
 namespace eureka_blocks {
   //% shim=DS18B20::Temperature
   //% group="DS18B20"
@@ -44,10 +44,10 @@ namespace eureka_blocks {
   }
 
   /*
-    //% weight=10 blockId="Temperature_string" 
+    //% color="#ff7b00" weight=7 blockId="Temperature_string" 
     //% block="温度センサDS（文字返し） |%p|"
     //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
-    //% group="DS18B20"
+    //% group="4_センサの値"
     export function TemperatureString(p: eureka_IO): string {
         let temp = Temperature(p);
         let x = Math.round((temp / 100))
