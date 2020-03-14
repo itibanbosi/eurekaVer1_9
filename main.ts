@@ -73,7 +73,7 @@ namespace eureka_blocks {
     return x;
   }
 
-  //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号機 点灯|%mode| |%pin|" group="1_信号機"
+  //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号機 点灯|%mode| |%pin|" group="1_信号機ユニット"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
   export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
@@ -91,7 +91,7 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="黄信号機 点灯|%mode| |%pin|" group="1_信号機"
+  //% color="#ffa800" weight=53 blockId=eureka_tl_yellow block="黄信号機 点灯|%mode| |%pin|" group="1_信号機ユニット"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_yellow(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
@@ -109,7 +109,7 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤信号機 点灯|%mode| |%pin|" group="1_信号機"
+  //% color="#ff4940" weight=52 blockId=eureka_tl_red block="赤信号機 点灯|%mode| |%pin|" group="1_信号機ユニット"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=4
   export function eureka_tl_red(mode: onoff, pin: eureka_tlp) {
     switch (pin) {
@@ -128,7 +128,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#1E90FF" weight=51 block="待ち時間（秒）|%second|" group="1_信号機"
+  //% color="#1E90FF" weight=51 block="待ち時間（秒）|%second|" group="1_信号機ユニット"
   //% second.min=0 second.max=10
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
@@ -214,12 +214,12 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#ff3d03" weight=19 blockId=eureka_buz_set block="ユーレカIOで音をならす" group="3_ユーレカIO"
+  //% color="#ff3d03" weight=19 blockId=eureka_buz_set block="ユーレカIOで音をならす" group="3_ユーレカ装置"
   export function eureka_buz_set() {
     pins.analogSetPitchPin(AnalogPin.P8);
   }
 
-  //% color="#6041f1"  weight=23 blockId=eureka_L9110 block="モータL |%mode| |%pin|" group="3_ユーレカIO"
+  //% color="#6041f1"  weight=23 blockId=eureka_L9110 block="モータL |%mode| |%pin|" group="3_ユーレカ装置"
   //% mode.min=-1023 mode.max=1023
   export function L9110driver(port: eureka_denki, mode: number) {
     switch (port) {
@@ -252,7 +252,7 @@ namespace eureka_blocks {
     }
   }
 
-  //% color="#525252" weight=18 blockId=eureka_relay block="単体_リレー |%mode||%pin|" group="3_ユーレカIO"
+  //% color="#525252" weight=18 blockId=eureka_relay block="単体_リレー |%mode||%pin|" group="3_ユーレカ装置"
   export function eureka_relay(pin: eureka_IO, mode: onoff) {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
@@ -275,7 +275,7 @@ namespace eureka_blocks {
         }
     }
   }
-  //% color="#40a6ff" weight=17 blockId=eureka_white block="単体_LED |%mode||%pin|" group="3_ユーレカIO"
+  //% color="#40a6ff" weight=17 blockId=eureka_white block="単体_LED |%mode||%pin|" group="3_ユーレカ装置"
   export function eureka_white(port: eureka_IO, mode: onoff) {
     switch (port) {
       case eureka_IO.Aﾎﾟｰﾄ:
