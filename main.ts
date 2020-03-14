@@ -33,6 +33,13 @@ enum L9110moter {
   gyakuten,
   seisi
 }
+enum eureka_number{
+  0.5,
+  1,
+  2,
+  5,
+  10
+}
 
 //% color="#74ad1d" block="ユーレカIO"
 namespace eureka_blocks {
@@ -129,7 +136,6 @@ namespace eureka_blocks {
   }
 
   //% color="#1E90FF" weight=51 block="待ち時間（秒）|%second|" group="1_信号機ユニット"
-  //% second.min=0 second.max=10
   export function driveForwards(second: number): void {
     basic.pause(second * 1000);
   }
