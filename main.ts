@@ -34,7 +34,7 @@ enum L9110moter {
   seisi
 }
 
-//% color="#74ad1d" block="ユーレカIO"
+//% color="#ff7b00" block="4_センサの値"
 namespace eureka_blocks {
   //% shim=DS18B20::Temperature
   //% group="DS18B20"
