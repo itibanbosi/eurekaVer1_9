@@ -325,7 +325,7 @@ namespace eureka_blocks {
         return pins.digitalReadPin(DigitalPin.P2);
     }
   }
-  //% color="#ff7b00" weight=7 blockId=eureka_temp block="温度ｾﾝｻMCP |%pin|" group="4_センサの値"
+  //% color="#ff7b00" weight=9 blockId=eureka_temp block="温度ｾﾝｻMCP |%pin|" group="4_センサの値"
   export function eureka_temp(pin: eureka_IO): number {
     switch (pin) {
       case eureka_IO.Aﾎﾟｰﾄ:
