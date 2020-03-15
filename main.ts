@@ -236,6 +236,7 @@ namespace eureka_blocks {
           pins.digitalWritePin(DigitalPin.P0, 0);
           pins.digitalWritePin(DigitalPin.P13, 0);
         }
+        break;
       case eureka_denki.Bﾎﾟｰﾄ:
         if (mode > 0) {
           pins.digitalWritePin(DigitalPin.P1, 0);
@@ -249,6 +250,7 @@ namespace eureka_blocks {
           pins.digitalWritePin(DigitalPin.P1, 0);
           pins.digitalWritePin(DigitalPin.P15, 0);
         }
+        break;
     }
   }
 
