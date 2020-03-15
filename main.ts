@@ -220,16 +220,16 @@ namespace eureka_blocks {
   }
 
   //% color="#6041f1"  weight=23 blockId=eureka_L9110 block="モーターＬ |%mode| |%pin|" group="3_ユーレカ装置"
-  //% mode.min=-1023 mode.max=1023
+  //% mode.min=-100 mode.max=100
   export function L9110driver(port: eureka_denki, mode: number) {
     switch (port) {
       case eureka_denki.Aﾎﾟｰﾄ:
         if (mode > 0) {
           pins.digitalWritePin(DigitalPin.P0, 0);
-          pins.analogWritePin(AnalogPin.P13, mode);
+          pins.analogWritePin(AnalogPin.P13, mode*10.23);
         }
         if (mode < 0) {
-          pins.analogWritePin(AnalogPin.P0, -mode);
+          pins.analogWritePin(AnalogPin.P0, -mode*10.23);
           pins.digitalWritePin(DigitalPin.P13, 0);
         }
         if (mode == 0) {
@@ -240,10 +240,10 @@ namespace eureka_blocks {
       case eureka_denki.Bﾎﾟｰﾄ:
         if (mode > 0) {
           pins.digitalWritePin(DigitalPin.P1, 0);
-          pins.analogWritePin(AnalogPin.P15, mode);
+          pins.analogWritePin(AnalogPin.P15, mode*10.23);
         }
         if (mode < 0) {
-          pins.analogWritePin(AnalogPin.P1, -mode);
+          pins.analogWritePin(AnalogPin.P1, -mode*10.23);
           pins.digitalWritePin(DigitalPin.P15, 0);
         }
         if (mode == 0) {
