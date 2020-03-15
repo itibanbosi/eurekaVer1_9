@@ -219,7 +219,7 @@ namespace eureka_blocks {
     pins.analogSetPitchPin(AnalogPin.P8);
   }
 
-  //% color="#6041f1"  weight=23 blockId=eureka_L9110 block="モータL |%mode| |%pin|" group="3_ユーレカ装置"
+  //% color="#6041f1"  weight=23 blockId=eureka_L9110 block="モーターＬ |%mode| |%pin|" group="3_ユーレカ装置"
   //% mode.min=-1023 mode.max=1023
   export function L9110driver(port: eureka_denki, mode: number) {
     switch (port) {
