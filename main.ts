@@ -225,12 +225,12 @@ namespace eureka_blocks {
     switch (port) {
       case eureka_denki.Aﾎﾟｰﾄ:
         if (mode > 0) {
-          pins.analogWritePin(AnalogPin.P0, -mode*10.23);
+          pins.analogWritePin(AnalogPin.P0, Math.round(-mode*10.23));
           pins.digitalWritePin(DigitalPin.P13, 0);
         }
         if (mode < 0) {
           pins.digitalWritePin(DigitalPin.P0, 0);
-          pins.analogWritePin(AnalogPin.P13, mode*10.23);}
+          pins.analogWritePin(AnalogPin.P13, Math.round(mode*10.23));}
         if (mode == 0) {
           pins.digitalWritePin(DigitalPin.P0, 0);
           pins.digitalWritePin(DigitalPin.P13, 0);
@@ -238,12 +238,13 @@ namespace eureka_blocks {
         break;
       case eureka_denki.Bﾎﾟｰﾄ:
         if (mode > 0) {
-          pins.analogWritePin(AnalogPin.P1, -mode*10.23);
+          pins.analogWritePin(AnalogPin.P1, Math.round(-mode*10.23));
           pins.digitalWritePin(DigitalPin.P15, 0);
         }
         if (mode < 0) {
            pins.digitalWritePin(DigitalPin.P1, 0);
-          pins.analogWritePin(AnalogPin.P15, mode*10.23);       }
+          pins.analogWritePin(AnalogPin.P15, Math.round(mode*10.23));
+        }
         if (mode == 0) {
           pins.digitalWritePin(DigitalPin.P1, 0);
           pins.digitalWritePin(DigitalPin.P15, 0);
