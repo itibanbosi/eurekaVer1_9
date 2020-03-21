@@ -62,9 +62,8 @@ namespace eureka_blocks {
         }
         return z
     }
-    
-
-  //% weight=10 blockId="Temperature_number"
+  
+    //% weight=10 blockId="Temperature_number"
   //% block="温度センサDS |%p|"
   //% p.fieldEditor="gridpicker" p.fieldOptions.columns=4
   //% group="4_センサの値"
