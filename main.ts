@@ -62,7 +62,7 @@ namespace eureka_blocks {
         }
         return z
     }
-    */
+    
 
   //% weight=10 blockId="Temperature_number"
   //% block="温度センサDS |%p|"
@@ -73,7 +73,7 @@ namespace eureka_blocks {
     let x = Math.round(temp / 100);
     return x;
   }
-
+*/
   //% color="#4741f1" weight=54 blockId=eureka_tl_blue block="青信号機 点灯|%mode| |%pin|" group="1_信号機ユニット"
   //% pin.fieldEditor="gridpicker" pin.fieldOptions.columns=10
   export function eureka_tl_blue(mode: onoff, pin: eureka_tlp) {
